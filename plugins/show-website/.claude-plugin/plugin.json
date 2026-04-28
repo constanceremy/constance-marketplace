@@ -1,0 +1,9 @@
+{
+  "name": "show-website",
+  "version": "1.0.0",
+  "description": "Start the NV & more Next.js dev server and open the website locally. USE WHEN the user wants to preview or view the website, start the dev server, or says \"show me the website\".\n",
+  "author": {
+    "name": "Constance Remy"
+  },
+  "keywords": []
+}

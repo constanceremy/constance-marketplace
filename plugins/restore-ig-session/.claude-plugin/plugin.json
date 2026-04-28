@@ -1,0 +1,9 @@
+{
+  "name": "restore-ig-session",
+  "version": "1.0.0",
+  "description": "Restore the Instagram instaloader session when it expires or gets 401/rate-limited errors. USE WHEN the IG drip scraper fails with 401 Unauthorized, \"Please wait a few minutes\", session expired, or logged out of Instagram. Also use when the user says the session is broken, Instagram isn't working, or needs to update IG_SESSION_B64.",
+  "author": {
+    "name": "Constance Remy"
+  },
+  "keywords": []
+}

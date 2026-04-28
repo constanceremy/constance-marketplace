@@ -1,0 +1,9 @@
+{
+  "name": "create-skill",
+  "version": "1.0.0",
+  "description": "Create, validate, update, or canonicalize Claude Code skills with standardized structure and naming conventions. USE WHEN creating a new skill OR validating an existing skill OR updating a skill OR restructuring a legacy skill to canonical format.",
+  "author": {
+    "name": "Constance Remy"
+  },
+  "keywords": []
+}

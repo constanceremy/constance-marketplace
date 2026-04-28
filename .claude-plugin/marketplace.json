@@ -1,0 +1,60 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "constance-marketplace",
+  "description": "Skills & tools by Constance Remy",
+  "owner": {
+    "name": "Constance Remy"
+  },
+  "plugins": [
+    {
+      "name": "create-skill",
+      "description": "Create, validate, update, or canonicalize Claude Code skills with standardized structure and naming conventions. USE WHEN creating a new skill OR validating an existing skill OR updating a skill OR restructuring a legacy skill to canonical format.",
+      "author": {
+        "name": "Constance Remy"
+      },
+      "source": "./plugins/create-skill",
+      "category": "productivity",
+      "homepage": "https://constance-marketplace.vercel.app/skills/create-skill"
+    },
+    {
+      "name": "new-event",
+      "description": "Checklist for creating a new bookable event/experience on NV & more website",
+      "author": {
+        "name": "Constance Remy"
+      },
+      "source": "./plugins/new-event",
+      "category": "productivity",
+      "homepage": "https://constance-marketplace.vercel.app/skills/new-event"
+    },
+    {
+      "name": "one-time-insta-post-scraper",
+      "description": "Scrape a single Instagram post URL into the Notion events database. USE WHEN the user pastes an Instagram post URL and wants it scraped into Notion, or says \"scrape this post\", \"add this IG post\", \"can you scrape this instagram\".",
+      "author": {
+        "name": "Constance Remy"
+      },
+      "source": "./plugins/one-time-insta-post-scraper",
+      "category": "productivity",
+      "homepage": "https://constance-marketplace.vercel.app/skills/one-time-insta-post-scraper"
+    },
+    {
+      "name": "restore-ig-session",
+      "description": "Restore the Instagram instaloader session when it expires or gets 401/rate-limited errors. USE WHEN the IG drip scraper fails with 401 Unauthorized, \"Please wait a few minutes\", session expired, or logged out of Instagram. Also use when the user says the session is broken, Instagram isn't working, or needs to update IG_SESSION_B64.",
+      "author": {
+        "name": "Constance Remy"
+      },
+      "source": "./plugins/restore-ig-session",
+      "category": "productivity",
+      "homepage": "https://constance-marketplace.vercel.app/skills/restore-ig-session"
+    },
+    {
+      "name": "show-website",
+      "description": "Start the NV & more Next.js dev server and open the website locally. USE WHEN the user wants to preview or view the website, start the dev server, or says \"show me the website\".\n",
+      "author": {
+        "name": "Constance Remy"
+      },
+      "source": "./plugins/show-website",
+      "category": "productivity",
+      "homepage": "https://constance-marketplace.vercel.app/skills/show-website"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "one-time-insta-post-scraper",
+  "version": "1.0.0",
+  "description": "Scrape a single Instagram post URL into the Notion events database. USE WHEN the user pastes an Instagram post URL and wants it scraped into Notion, or says \"scrape this post\", \"add this IG post\", \"can you scrape this instagram\".",
+  "author": {
+    "name": "Constance Remy"
+  },
+  "keywords": []
+}
