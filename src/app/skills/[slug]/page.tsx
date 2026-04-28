@@ -27,6 +27,8 @@ export default async function SkillPage({
   const skill = getSkillBySlug(slug);
   if (!skill) notFound();
 
+  const installCmd = `mkdir -p .claude/skills/${skill.slug} && curl -fsSL https://raw.githubusercontent.com/constanceremyveo/constance-marketplace/main/skills/${skill.slug}.md -o .claude/skills/${skill.slug}/SKILL.md`;
+
   return (
     <main className="max-w-4xl mx-auto px-6 py-16">
       <div className="mb-10">
@@ -60,6 +62,18 @@ export default async function SkillPage({
             ))}
           </div>
         )}
+      </div>
+
+      <div className="border border-black mb-4">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-black">
+          <span className="text-xs uppercase tracking-widest opacity-40">
+            Install
+          </span>
+          <CopyButton text={installCmd} />
+        </div>
+        <pre className="p-4 text-xs leading-relaxed overflow-x-auto whitespace-pre-wrap font-mono opacity-70">
+          {installCmd}
+        </pre>
       </div>
 
       <div className="border border-black">
