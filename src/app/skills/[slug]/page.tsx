@@ -27,7 +27,7 @@ export default async function SkillPage({
   const skill = getSkillBySlug(slug);
   if (!skill) notFound();
 
-  const installCmd = `mkdir -p .claude/skills/${skill.slug} && curl -fsSL https://raw.githubusercontent.com/constanceremyveo/constance-marketplace/main/skills/${skill.slug}.md -o .claude/skills/${skill.slug}/SKILL.md`;
+  const installCmd = `mkdir -p .claude/skills/${skill.slug} && curl -fsSL https://raw.githubusercontent.com/constanceremy/constance-marketplace/main/skills/${skill.slug}.md -o .claude/skills/${skill.slug}/SKILL.md`;
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-16">

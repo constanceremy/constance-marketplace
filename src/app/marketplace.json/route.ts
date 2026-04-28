@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 const SITE_URL = "https://constance-marketplace.vercel.app";
 const RAW_BASE =
-  "https://raw.githubusercontent.com/constanceremyveo/constance-marketplace/main/skills";
+  "https://raw.githubusercontent.com/constanceremy/constance-marketplace/main/skills";
 
 export async function GET() {
   const skills = getAllSkills();
