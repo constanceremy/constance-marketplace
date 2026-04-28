@@ -1,9 +1,11 @@
 ---
-name: New Event
-description: Checklist for creating a new bookable event/experience on NV & more — Notion, Stripe, and sessions.
-tags: [notion, stripe, events, checklist]
-category: Content
+name: new-event
+description: Checklist for creating a new bookable event/experience on NV & more website
+tags: []
+category: General
 ---
+# New Event Checklist
+
 Follow these steps every time you create a new bookable experience on NV & more.
 
 ---
@@ -33,7 +35,7 @@ Open the **Experiences DB** (`320375efa2cc809ca2dae69a1aa15423`) and create a ne
 
 ## Step 2: Create a Stripe Product
 
-1. Go to Stripe Dashboard → Products (stay in **Test mode** until going live)
+1. Go to [Stripe Dashboard → Products](https://dashboard.stripe.com/test/products) (stay in **Test mode** until going live)
 2. Click **Add product**
 3. Name it the same as the experience
 4. Set the price (one-time, correct currency)

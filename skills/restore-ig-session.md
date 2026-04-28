@@ -1,10 +1,17 @@
 ---
-name: Restore IG Session
-description: Restore the Instagram instaloader session when it expires or gets 401/rate-limited errors.
-tags: [instagram, scraping, session]
-category: Scraping
+name: restore-ig-session
+description: >-
+  Restore the Instagram instaloader session when it expires or gets
+  401/rate-limited errors. USE WHEN the IG drip scraper fails with 401
+  Unauthorized, "Please wait a few minutes", session expired, or logged out of
+  Instagram. Also use when the user says the session is broken, Instagram isn't
+  working, or needs to update IG_SESSION_B64.
+tags: []
+category: General
 ---
-USE WHEN the IG drip scraper fails with 401 Unauthorized, "Please wait a few minutes", session expired, or logged out of Instagram. Also use when the user says the session is broken, Instagram isn't working, or needs to update IG_SESSION_B64.
+# Restore Instagram Session
+
+Restores the instaloader session after expiry or account re-login. The session is stored as a base64-encoded pickle file in GitHub secret `IG_SESSION_B64` and deployed to the self-hosted runner.
 
 ## When to use this skill
 

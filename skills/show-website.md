@@ -1,10 +1,15 @@
 ---
-name: Show Website
-description: Start the NV & more Next.js dev server and open the website locally.
-tags: [nextjs, dev-server, preview]
-category: Development
+name: show-website
+description: >
+  Start the NV & more Next.js dev server and open the website locally. USE WHEN
+  the user wants to preview or view the website, start the dev server, or says
+  "show me the website".
+tags: []
+category: General
 ---
-USE WHEN the user wants to preview or view the website, start the dev server, or says "show me the website".
+# Show Website
+
+Kill any process on port 3000, start the Next.js dev server, and tell the user to open the browser.
 
 ## Steps
 

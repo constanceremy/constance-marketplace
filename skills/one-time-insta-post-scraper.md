@@ -1,10 +1,15 @@
 ---
-name: One-Time Insta Post Scraper
-description: Scrape a single Instagram post URL into the Notion events database. Use when someone pastes an IG post URL and wants it added to Notion.
-tags: [instagram, scraping, notion]
-category: Scraping
+name: one-time-insta-post-scraper
+description: >-
+  Scrape a single Instagram post URL into the Notion events database. USE WHEN
+  the user pastes an Instagram post URL and wants it scraped into Notion, or
+  says "scrape this post", "add this IG post", "can you scrape this instagram".
+tags: []
+category: General
 ---
-Works even when the drip scraper session is expired, because it fetches the post via shortcode (a different API path).
+# One-Time Instagram Post Scraper
+
+Scrapes a single Instagram post into the Notion events database using `scrape_one_post.py`. Works even when the drip scraper session is expired, because it fetches the post via shortcode (a different API path).
 
 ## Steps
 
@@ -33,3 +38,19 @@ nv_scraper/.venv/bin/python3 scrape_one_post.py <instagram_post_url>
 - Works even with an expired session (the shortcode fetch uses a different API path than the account feed scrape)
 - If the post is a carousel, all slides are downloaded and sent to Gemini
 - A single post can produce multiple Notion entries (e.g. a recurring event listed day-by-day)
+
+## Examples
+
+**Example 1: Scrape a post**
+```
+User: "can you use the one time instagram scraper to do this post? https://www.instagram.com/p/DWUTgAcgFrV/"
+-> Runs scrape_one_post.py with the URL
+-> Reports how many events were created in Notion
+```
+
+**Example 2: Scrape a post that's not an event**
+```
+User: "scrape https://www.instagram.com/p/XYZ123/"
+-> Runs scrape_one_post.py
+-> Reports "❌ No events found" if Gemini determines it's not an event post
+```
