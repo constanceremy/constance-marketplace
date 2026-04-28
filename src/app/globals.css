@@ -1,0 +1,14 @@
+@import url("https://www.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  background: #fff;
+  color: #000;
+}
